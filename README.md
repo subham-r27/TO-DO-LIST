@@ -15,9 +15,16 @@ A full-stack task manager using React, Redux, Node.js, and MongoDB.
 - Dynamic routing with React Router
 
 ## Run Locally
+### Frontend
+```bash
+cd todo_frontend
+npm install
+npm run start
 
 ### Backend
 ```bash
-cd backend
+cd todo_backend
 npm install
 npm run start
+
+
