@@ -1,5 +1,5 @@
-# to-do-list
-Task Management App
+# To-do-list
+TO-DO LIST App
 
 A full-stack task manager using React, Redux, Node.js, and MongoDB.
 
