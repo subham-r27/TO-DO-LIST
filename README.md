@@ -7,7 +7,7 @@ A full-stack task manager using React, Redux, Node.js, and MongoDB.
 - **Frontend:** React, Bootstrap, Redux, React Router
 - **Backend:** Node.js, Express, MongoDB, Mongoose
 - **API:** RESTful CRUD
-- **Deployment:** Netlify (Frontend), Render (Backend)
+- **Deployment:** vercel (Frontend), Render (Backend)
 
 ## Features
 - Add, view, edit, and delete tasks
