@@ -10,13 +10,13 @@ const Home = () => {
     const [taskid, setTaskid] = useState('');
 
     useEffect(() => {
-        axios.get('https://to-do-list-3z22.onrender.com/get')
+        axios.get('http://localhost:5000/get')
             .then(result => setTodos(result.data))
             .catch(err => console.log(err));
     }, []);
 
     const edit = (id) => {
-        axios.put(`https://to-do-list-3z22.onrender.com/edit/${id}`)
+       axios.put(`http://localhost:5000/edit/${id}`)
             .then(result => {
                 console.log(result.data);
                 const updatedTodos = todos.map(todo => {
@@ -31,7 +31,7 @@ const Home = () => {
     };
 
     const Update = (id, updatedTask) => {
-        axios.put(`https://to-do-list-3z22.onrender.com/update/${id}`, { task: updatedTask })
+        axios.put(`http://localhost:5000/update/${id}`, { task: updatedTask })
             .then(result => {
                 console.log(result.data);
                 const updatedTodos = todos.map(todo => {
@@ -49,7 +49,7 @@ const Home = () => {
     };
 
     const Hdelete = (id) => {
-        axios.delete(`https://to-do-list-3z22.onrender.com/delete/${id}`)
+        axios.delete(`http://localhost:5000/delete/${id}`)
             .then(result => {
                 console.log(result.data);
                 const updatedTodos = todos.filter(todo => todo._id !== id);
